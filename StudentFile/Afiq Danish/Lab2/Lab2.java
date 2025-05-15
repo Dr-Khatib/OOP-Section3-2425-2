@@ -1,4 +1,4 @@
-public class Main {
+public class Lab2 {
     public static void main(String[] args) {
         Employee e1 = new Employee();
         e1.setEmpNum(101);
@@ -68,7 +68,7 @@ class Car {
     }
 
     public int getCaryear(){
-        return year;
+        return carYear;
     }
 }
 
@@ -121,7 +121,7 @@ class Message {
 //Question 6
 class User {
     // TODO: Declare a static counter variable
-    private static counter;
+    private static int counter;
 
     public User() {
         // TODO: Increment counter
