@@ -274,54 +274,7 @@ public class TestInheritance {
 
 ---
 
-## 📌 Final Full Java File: Composition Example
 
-```java
-public class TestPerson {
-    public static void main(String[] args) {
-        Address address = new Address("Jalan Pulai 13/2", "Skudai", "Johor", "81310");
-        Person person = new Person(new Name("Mohamad", "Ali"), address);
-        System.out.println(person);
-    }
-}
-
-class Name {
-    private String firstName, lastName;
-    public Name(String first, String last) {
-        this.firstName = first; this.lastName = last;
-    }
-    public String getFullName() {
-        return firstName + " " + lastName;
-    }
-}
-
-class Address {
-    private String street, city, state, zip;
-    public Address(String street, String city, String state, String zip) {
-        this.street = street; this.city = city;
-        this.state = state; this.zip = zip;
-    }
-    public String getFullAddress() {
-        return street + "\n" + city + ", " + state + " " + zip;
-    }
-}
-
-class Person {
-    private Name name;
-    private Address address;
-
-    public Person(Name name, Address address) {
-        this.name = name;
-        this.address = address;
-    }
-
-    public String toString() {
-        return "\n" + name.getFullName() + "\n" + address.getFullAddress();
-    }
-}
-```
-
----
 
 
 
