@@ -1,4 +1,4 @@
-Here's a complete, restructured chapter on **Class Relationships in Java**, based on your uploaded slides and your requirements. It includes explanations, comparisons, class diagrams, and runnable Java code for each relationship type: **Association, Aggregation, Composition, and Inheritance**.
+Here's a complete, restructured chapter on **Class Relationships in Java**. It includes explanations, comparisons, class diagrams, and runnable Java code for each relationship type: **Association, Aggregation, Composition, and Inheritance**.
 
 ---
 
