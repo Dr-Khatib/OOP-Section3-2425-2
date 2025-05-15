@@ -9,3 +9,5 @@
 [Chapter_4 - Arrays](./Chapter4-Array/)
 
 [Chapter_5 - Vector](./Chapter5-Vector/)
+
+[Chapter_6 - Class relationship](./Chapter6-ClassRelation/)
