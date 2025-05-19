@@ -1,5 +1,3 @@
----
-
 ## 🧬 Comprehensive Java Inheritance Note
 
 ### 🔑 Key Concepts
