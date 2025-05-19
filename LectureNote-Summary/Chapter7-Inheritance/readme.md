@@ -1,11 +1,3 @@
-Here is a **complete inheritance note** that covers all key aspects:
-
-✅ `protected` variables
-✅ `private` variables and access via public methods
-✅ `this` usage and when it’s not required
-✅ Full runnable Java example
-✅ UML diagram in **Mermaid syntax**
-
 ---
 
 ## 🧬 Comprehensive Java Inheritance Note
