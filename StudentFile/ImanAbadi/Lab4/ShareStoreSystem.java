@@ -64,7 +64,7 @@ class SpaceLot {
         this.lotId = lotId;
         this.size = size;
         this.assignedMember = null;
-        this.items = new ArrayList<Item>();
+        this.items = new ArrayList<>();
         
     }
 
@@ -119,7 +119,7 @@ class Store {
         this.storeId = storeId;
         this.name = name;
         this.location = location;
-        this.spaceLots = new ArrayList<SpaceLot>();
+        this.spaceLots = new ArrayList<>();
     }
 
     // Add a space lot to the store
