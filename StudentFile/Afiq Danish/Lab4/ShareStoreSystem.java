@@ -18,7 +18,7 @@ class Member {
     // Return member info
     public String getInfo() {
         // TODO: Return a formatted string like: "Alice (M001), Phone: 012-3456789"
-        return String.format("%s (%s), Phone: %s", name, memberId, phoneNumber);
+        return name + "(" + memberId + "), Phone: " + phoneNumber;
     }
 }
 
@@ -40,7 +40,7 @@ class Item {
     // Return item details
     public String getDetails() {
         // TODO: Return a formatted string like: "Bicycle: Mountain bike"
-        return String.format("%s: %s", name, description);
+        return name + ": " + "description";
     }
 }
 
