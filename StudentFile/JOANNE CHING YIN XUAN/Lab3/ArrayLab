@@ -1,0 +1,160 @@
+import java.util.*;
+
+public class ArrayLab {
+
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        
+        // Part A: Q1
+        System.out.println("Question 1: \nIn Java,must use square brackets [] to create an array with a specified size, not parentheses.");
+        System.out.println("Correct Syntax: ");
+        System.out.println("double[] gpa = new double [4]");
+        double[] gpa = new double [4];
+
+        // Part A: Q2
+        System.out.println("\nQuestion 2: \nIn Java, shorthand array initialization only allowed at the time of declaration.");
+        System.out.println("Correct Syntax: ");
+        System.out.println("int [] points = {90,85,88};");
+        int [] points = {90,85,88};
+        
+        // Part A: Q3
+        System.out.println("\nQuestion 3: \nIn Java, the varargs (...) parameter must be the last parameter in the method.");
+        System.out.println("Correct Syntax: ");
+        System.out.println("public static void printTotal(String title,int... values) {...//}");
+      
+        // Part B: Q4
+        System.out.println("\nQuestion 4:");
+        System.out.println("Declare and initialize a 2D array called matrix that stores the numbers 1 to 9 arranged in 3 rows and 3 columns.");
+        System.out.println("int[][] matrix = {\n" +
+                   "    {1, 2, 3},\n" +
+                   "    {4, 5, 6},\n" +
+                   "    {7, 8, 9}\n" +
+                   "};");
+
+        int[][] matrix = {
+            {1, 2, 3},
+            {4, 5, 6},
+            {7, 8, 9}
+        };
+
+        // Part B: Q5\   
+        System.out.println("\nQuestion 5:");
+        System.out.println("Create an ArrayList named grades that stores Double values for student grades.");
+        System.out.println("ArrayList<Double> grades = new ArrayList<Double>();\n");
+        ArrayList<Double> grades = new ArrayList<>(); 
+
+        // Part B: Q6
+        System.out.println("\nQuestion 6:");
+        System.out.println("Create an anonymous array to store and immediately print the average of {10, 20, 30, 40} using a helper method printAverage.");
+        printAverage(new int[]{10, 20, 30, 40}); // Anonymous array passed to printAverage method
+
+
+        // ArrayList of subjects
+        ArrayList<String> subjects = new ArrayList<>();
+        subjects.add("Math");
+        subjects.add("Science");
+        subjects.add("English");
+
+        // Array of Student objects
+        Student[] students = new Student[3];
+        students[0] = new Student("Ali", 20);
+        students[1] = new Student("Siti", 21);
+        students[2] = new Student("Raj", 19);
+       
+        // Part C: Q7
+        System.out.println("\nQuestion 7: ");
+       
+        // 1D array for student scores
+        int[] scores = new int[5];
+        for (int i = 0; i < scores.length; i++) {
+           System.out.print("Enter score " + (i + 1) + ": ");
+           scores[i] = input.nextInt();
+        }
+
+        int highestScore = findHighestScore(scores);
+        System.out.println("Highest score: " + highestScore);
+           // 2D array for marks of 3 students and 3 subjects
+           int[][] marks = {
+            {85, 78, 90},
+            {88, 92, 79},
+            {75, 80, 85}
+        };
+
+        // Display all student names
+        // Part C: Q8
+        System.out.println("\nQuestion 8: ");
+        printStudentInfo(students);
+
+        // Part C Q9
+        System.out.println("\nQuestion 9: ");
+        int totalMarks = sumSubjectMarks(marks);
+        System.out.println("Total marks for all students in all subjects: " + totalMarks);
+
+        input.close();
+    }
+
+    // Part A: Q3
+    public static void printTotal(String title,int... values) { 
+        int sum = 0;
+        for (int v: values){
+            sum += v;
+        }
+        System.out.println(title +": Total =" + sum);
+    }
+
+    // Part B: Q6
+    public static void printAverage(int[] avr) {
+        int sum = 0;
+
+        for (int i : avr) 
+            sum += i;
+
+        double avg = (double) sum / avr.length;
+        System.out.println("Average: " + avg);
+    }    
+
+    //Part C: Q7
+    public static int findHighestScore(int[] scores) {
+        int highest = scores[0];
+        for (int s : scores) {
+            if (s > highest) {
+                highest = s;
+            }
+        }
+        return highest;
+    }
+
+    //Part C: Q8
+    public static void printStudentInfo(Student[] arr){
+        for (Student s : arr) {
+            System.out.println("Student: " + s.getName() + ", Age: " + s.getAge());
+        }
+
+    }
+
+    //Part C: Q9
+    public static int sumSubjectMarks(int[][] marks){
+        int total = 0;
+        for (int[]row : marks){
+            for(int mark:row){
+                total += mark;
+            }
+        }
+        return total;
+    }
+
+}
+
+// Student class
+class Student {
+    private String name;
+    private int age;
+
+    public Student(String name, int age) {
+        this.name = name;
+        this.age = age;
+    }
+
+    public String getName() { return name; }
+    public int getAge() { return age; }
+}

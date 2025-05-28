@@ -7,3 +7,9 @@
 [Chapter_3 - Enum and Package](./Chapter3-EnumPaackage/)
 
 [Chapter_4 - Arrays](./Chapter4-Array/)
+
+[Chapter_5 - Vector](./Chapter5-Vector/)
+
+[Chapter_6 - Class relationship](./Chapter6-ClassRelation/)
+
+[Chapter_7 - Inheritance (First Part) ](./Chapter7-Inheritance/)

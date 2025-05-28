@@ -1,0 +1,133 @@
+import java.util.*;
+
+public class ArrayLab {
+    public static void main(String[] args) {
+
+        Scanner input = new Scanner(System.in);
+
+        // Part A
+
+        // Q1
+        double[] gpa = new double[4];
+
+        // Q2
+        int[] points = {90, 85, 88};
+
+        // Part B
+
+        // Q4
+        int[][] matrix = {
+            {1, 2, 3},
+            {4, 5, 6},
+            {7, 8, 9}
+        };
+
+        // Q5
+        ArrayList<Double> grades = new ArrayList<>();
+
+        // Q6
+        int[] numbers = {10, 20, 30, 40};
+        printAverage(numbers);
+
+        // 1D array for scores
+        int[] scores = new int[5];
+        for (int i = 0; i < scores.length; i++) {
+            System.out.print("Enter score " + (i + 1) + ": ");
+            scores[i] = input.nextInt();
+        }
+
+        // 2D array for marks of 3 students in 3 subjects
+        int[][] marks = {
+            {85, 78, 90},
+            {88, 92, 79},
+            {75, 80, 85}
+        };
+
+        // ArrayList of subjects
+        ArrayList<String> subjects = new ArrayList<>();
+        subjects.add("Math");
+        subjects.add("Science");
+        subjects.add("English");
+
+        // Student array
+        Student[] students = new Student[3];
+        students[0] = new Student("Ali", 20);
+        students[1] = new Student("Siti", 21);
+        students[2] = new Student("Raj", 19);
+
+        // Print student details
+        for (Student s : students) {
+            System.out.println("Student: " + s.getName() + ", Age: " + s.getAge());
+        }
+
+        int highest = findHighestScore(scores);
+        System.out.println("Highest score: " + highest);
+
+        printStudentInfo(students);
+        int totalMarks = sumSubjectMarks(marks);
+        System.out.println("Total marks: " + totalMarks);
+        
+        input.close();
+    }
+
+    // Q3: Method to print total with title
+    public static void printTotal(String title, int... values) {
+        int total = 0;
+        for (int v : values) {
+            total += v;
+        }
+        System.out.println(title + ": " + total);
+    }
+
+    // Q6 method: Average calculator
+    public static void printAverage(int[] arr) {
+        int total = 0;
+        for (int val : arr) {
+            total += val;
+        }
+        double avg = (double) total / arr.length;
+        System.out.println("Average: " + avg);
+    }
+
+    // Q7: Find highest score
+    public static int findHighestScore(int[] scores) {
+        int highest = scores[0];
+        for (int s : scores) {
+            if (s > highest) highest = s;
+        }
+        return highest;
+    }
+
+    // Q8: Print all students info
+    public static void printStudentInfo(Student[] arr) {
+        for (Student s : arr) {
+            System.out.println("Name: " + s.getName() + ", Age: " + s.getAge());
+        }
+    }
+
+    // Q9: Sum of all marks
+    public static int sumSubjectMarks(int[][] marks) {
+        int sum = 0;
+        for (int[] row : marks) {
+            for (int mark : row) {
+                sum += mark;
+            }
+        }
+        return sum;
+    }
+}
+
+// Student class
+class Student {
+    private String name;
+    private int age;
+
+    public Student(String name, int age) {
+        this.name = name;
+        this.age = age;
+    }
+
+    public String getName() { return name; }
+    public int getAge() { return age; }
+}
+

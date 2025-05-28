@@ -59,25 +59,32 @@ public class ArrayLab {
         }
 
         int highest = findHighestScore(scores);
+        System.out.println("Highest Score: " + highest);
         printStudentInfo(students);
         int totalMarks = sumSbjectMarks(marks);
         System.out.println("Total Marks: " + totalMarks);
 
+
         input.close();
     }
-}
 
-//Question 3 (Varargs)
+    //Question 3 (Varargs)
 public static void printTotal(String title, int... values){
-    //...
+    int sum = 0;
+    for (int value : values) {
+        sum += value;
+    }
+    System.out.println(title + ": " + sum);
 }
 
 //Question 6
 public static double printAverage(int[] numbers){
     int sum = 0;
     for(int num : numbers)
-        sum =+ num;
-    System.out.println("Average: " + (sum/(double)numbers.length));
+        sum += num;
+    double average = (double) sum / numbers.length;
+    System.out.println("Average: " + average);
+    return average; // added return
 }
 
 //Part C: Create & Use Methods
@@ -103,10 +110,11 @@ public static int sumSbjectMarks(int[][] marks){
     int sum = 0;
     for(int i = 0; i < marks.length; i++){
         for(int j = 0; j < marks[i].length; j++){
-            sum =+ marks[i][j];
+            sum += marks[i][j];
         }
     }
     return sum;
+}
 }
 
 // Student class
