@@ -8,3 +8,5 @@ SUBMISSION ALL IN YOUR OWN FOLDER INSIDE [StudentFile](../StudentFile/)
 [Lab Exercise 3 - Chapter 4](./LE3/)
 
 [Lab Exercise 4 - TEST 2 - QUESTION 2 (LOOKALIKE)](./LE4/)
+
+[Lab Exercise 5 - Implementation of All Class Relationship](./LE5/)
