@@ -1,0 +1,11 @@
+# Ignore compiled Java files in your labs
+Lab*/**/*.class
+
+# Optional: Ignore backup/swap files
+*~
+*.swp
+*.swo
+
+# Ignore logs or temp files
+*.log
+*.tmp
