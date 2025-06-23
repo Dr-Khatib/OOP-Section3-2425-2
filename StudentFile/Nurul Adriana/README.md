@@ -1,4 +1,4 @@
-# 📚 Library Management System – Java Mini Project
+# 📚 Library Management System – OOP Mini Project
 
 This Java mini project simulates a **Library Management System** that allows users to add, remove, and borrow books using core object-oriented programming concepts such as **inheritance**, **polymorphism**, **composition**, and **exception handling**.
 
