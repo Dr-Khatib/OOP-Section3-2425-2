@@ -172,6 +172,69 @@ if (removeIndex >= 0 && removeIndex < students.size()) {
    - Select option 3 to exit the program.
 
 ---
+![UML DIAGRAM](UML.png)
+# Course Registration System
+
+## 1. Classes
+
+### **User (Abstract Class)**
+The `User` class is the parent class for both `Admin` and `Student`. It contains two attributes:
+- **`username`**: Stores the username of the user.
+- **`password`**: Stores the password of the user.
+
+The `login` method is used to verify user credentials, and the abstract method `showMenu` is overridden by both the `Admin` and `Student` classes to define user-specific menus.
+
+### **Admin (Subclass of User)**
+The `Admin` class inherits from `User`. It adds functionality specific to administrators, such as:
+- Adding students.
+- Adding courses.
+- Viewing all students.
+- Removing students.
+
+It overrides the `showMenu` method to display a menu specific to admin tasks.
+
+### **Student (Subclass of User)**
+The `Student` class also inherits from `User` and has additional attributes:
+- **`studentId`**: A unique identifier for the student.
+- **`registeredCourses`**: An `ArrayList` of courses that the student is registered for.
+
+The `Student` class overrides the `showMenu` method to display a menu specific to student actions, such as registering for courses, removing courses, and viewing registered courses.
+
+### **Course**
+The `Course` class represents a course in the system. It has the following attribute:
+- **`courseName`**: Stores the name of the course.
+
+The `Course` class also has a method `getCourseName()` to return the course name. Each course can be registered by one or more students, creating a **one-to-many** relationship between `Student` and `Course`.
+
+## 2. Relationships
+
+### **Inheritance (Generalization)**
+The `Admin` and `Student` classes inherit from the `User` class. This is represented by the arrow pointing from `Admin` and `Student` to `User`, which indicates an **"is-a"** relationship. Both `Admin` and `Student` share common attributes (`username`, `password`) and methods (`login`, `showMenu`) from the `User` class, but they also have their own specific implementations.
+
+### **Association (Usage)**
+The `Student` class **uses** the `Course` class through the **`registers`** relationship. This is a **one-to-many** relationship, as indicated by the line with a **'1'** next to `Course` and a **'*'** next to `Student`. This means:
+- One student can register for many courses.
+- Each course can be associated with many students.
+
+The directional relationship from `Student` to `Course` indicates that the `Student` class knows about and interacts with `Course` (by registering or removing courses). However, the `Course` class does not necessarily need to know about students in this design.
+
+## 3. Method Visibility
+The methods shown in the diagram (e.g., `login`, `showMenu`, `registerCourse`, `removeCourse`, etc.) are **public**, meaning they are accessible from other classes. This is important for interactions between classes like `Admin`, `Student`, and `CourseRegistrationSystem`.
+
+## 4. Attributes
+
+- **`User` class** has two attributes:
+  - `username`: Represents the credentials for any user (admin or student).
+  - `password`: Represents the password for any user.
+
+- **`Student` class** introduces the following:
+  - `studentId`: A unique identifier for the student.
+  - `registeredCourses`: An `ArrayList` of courses that the student is enrolled in.
+
+- **`Course` class** has one attribute:
+  - `courseName`: Stores the name of the course.
+
+
 
 ## **Conclusion**
 This project demonstrates complete application of Java OOP concepts across Chapters 5–9, fulfilling all rubric requirements including dynamic data structures, class relationships, inheritance, polymorphism, and exception handling in a single cohesive console application.
