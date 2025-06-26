@@ -28,7 +28,7 @@ This OOP mini project simulates a **Library Management System** that allows user
 
 | Concept                | Implementation Summary                                                                         | Code Example                                              |
 | ---------------------- | ---------------------------------------------------------------------------------------------- | --------------------------------------------------------- |
-| **Inheritance**        | `Member` and `Librarian` are subclasses that extend the abstract superclass `User`.            | ![Inheritance Code Example](.png)              |
+| **Inheritance**        | `Member` and `Librarian` are subclasses that extend the abstract superclass `User`.            | ![Inheritance Code Example](inheritance.png)              |
 | **Method Overriding**  | Subclasses override methods from `User` such as `displayRole()` and `calculateFine()`.         | ![Method Overriding Code Example](methodOverriding.png)   |
 | **Polymorphism**       | A `User` reference points to a `Member` or `Librarian`, allowing dynamic behavior.             | ![Polymorphism Code Example](polymorphism.png)            |
 | **Dynamic Binding**    | Java decides at runtime which version of the overridden method to call.                        | ![Dynamic Binding Code Example](dynamicBinding.png)       |
@@ -103,14 +103,6 @@ Caught exception: Book not found: ISBN 9999
 
 1. Compile the program.
 2. Run the program.
-
----
-
-## 🧪 Testing Guide
-
-- All features are tested in the `main()` method
-- Screenshots of output are recommended for evidence
-- Demonstrates handling of both normal and exceptional cases
 
 ---
 
