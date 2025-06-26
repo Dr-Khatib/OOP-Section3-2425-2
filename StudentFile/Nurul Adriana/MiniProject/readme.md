@@ -108,7 +108,7 @@ Caught exception: Book not found: ISBN 9999
 
 ## 📄 UML Class Diagram
 
-📌 *See “OOP Mini Project.png” for class structure visualization, including relationships like inheritance, association, and composition.*
+📌 *See “OOP Mini Project.png” for class structure visualization, including relationships like inheritance, association, and composition.* <br>
 ![UML Diagram Code Example](umlOOP.png)
 
 ---
