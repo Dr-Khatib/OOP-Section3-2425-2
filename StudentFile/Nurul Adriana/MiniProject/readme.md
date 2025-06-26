@@ -26,18 +26,16 @@ This OOP mini project simulates a **Library Management System** that allows user
 
 ## 🧠 Object-Oriented Concepts with Implementation & Code Examples
 
-| Concept                | Implementation Summary                                                                         | Code Example                                                                                                                                                                                                       |
-| ---------------------- | ---------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| **Inheritance**        | `Member` and `Librarian` are subclasses that extend the abstract superclass `User`.            | ![Inheritance Code Example](inheritance.png)                                                                                             |
-| **Method Overriding**  | Subclasses override methods from `User` such as `displayRole()` and `calculateFine()`.         | ![Method Overriding Code Example](methodOverriding.png)
-                                              |
-| **Polymorphism**       | A `User` reference points to a `Member` or `Librarian`, allowing dynamic behavior.             | ![Polymorphism Code Example](polymorphism.png)                                                                              |
-| **Dynamic Binding**    | Java decides at runtime which version of the overridden method to call.                        | ![Dynamic Binding Code Example](dynamicBinding.png)                                                                                                           |
-| **Encapsulation**      | Class fields are private, and accessed through public methods.                                 | ![Encapsulation Code Example](encapsulation.png)                                                                                                                                 |
-| **Composition**        | `LibraryCard` owns a `Member` instance. If the member is deleted, the card is affected.        | ![Composition Code Example](composition.png)
-|
-| **Association**        | `Library` can be associated with a `Librarian` (they can exist independently).                 | ![Association Code Example](association.png)                                                                                             |
-| **Aggregation**        | `Library` uses a `Librarian`, but if `Library` is deleted, `Librarian` remains intact.         | ![Aggregation Code Example](aggregation.png)                     |
+| Concept                | Implementation Summary                                                                         | Code Example                                              |
+| ---------------------- | ---------------------------------------------------------------------------------------------- | --------------------------------------------------------- |
+| **Inheritance**        | `Member` and `Librarian` are subclasses that extend the abstract superclass `User`.            | ![Inheritance Code Example](inheritance.png)              |
+| **Method Overriding**  | Subclasses override methods from `User` such as `displayRole()` and `calculateFine()`.         | ![Method Overriding Code Example](methodOverriding.png)   |
+| **Polymorphism**       | A `User` reference points to a `Member` or `Librarian`, allowing dynamic behavior.             | ![Polymorphism Code Example](polymorphism.png)            |
+| **Dynamic Binding**    | Java decides at runtime which version of the overridden method to call.                        | ![Dynamic Binding Code Example](dynamicBinding.png)       |
+| **Encapsulation**      | Class fields are private, and accessed through public methods.                                 | ![Encapsulation Code Example](encapsulation.png)          |
+| **Composition**        | `LibraryCard` owns a `Member` instance. If the member is deleted, the card is affected.        | ![Composition Code Example](composition.png)              |
+| **Association**        | `Library` can be associated with a `Librarian` (they can exist independently).                 | ![Association Code Example](association.png)              |
+| **Aggregation**        | `Library` uses a `Librarian`, but if `Library` is deleted, `Librarian` remains intact.         | ![Aggregation Code Example](aggregation.png)              |
 | **Exception Handling** | Handles input validation and custom exceptions like `BookNotFoundException` using `try-catch`. | ![Exception Handling Code Example](exceptionHandling.png) |
 
 ---
@@ -119,6 +117,7 @@ Caught exception: Book not found: ISBN 9999
 ## 📄 UML Class Diagram
 
 📌 *See “OOP Mini Project.png” for class structure visualization, including relationships like inheritance, association, and composition.*
+![UML Diagram Code Example](umlOOP.png)
 
 ---
 
