@@ -43,7 +43,7 @@ This OOP mini project simulates a **Library Management System** that allows user
 ## 🔍 Sample Output
 
 === Adding Books === <br>
-/nBook added: The Hobbit <br>
+Book added: The Hobbit <br>
 Book added: The Alchemist 
 
 === Listing All Books === <br>
@@ -108,7 +108,6 @@ Caught exception: Book not found: ISBN 9999
 
 ## 📄 UML Class Diagram
 
-📌 *See “OOP Mini Project.png” for class structure visualization, including relationships like inheritance, association, and composition.* <br>
 ![UML Diagram Code Example](umlOOP.png)
 
 ---
