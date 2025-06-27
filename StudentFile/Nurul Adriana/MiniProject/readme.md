@@ -6,10 +6,10 @@ This OOP mini project simulates a **Library Management System** that allows user
 
 ## 👥 Team Members
 
-| Name      | Role       | Responsibilities |
-|-----------|------------|------------------|
-| AHMAD ZIYAAD BIN MOHD ABBAS (A23CS0206) | Person A | Data structures, relationships, exception handling |
-| NURUL ADRIANA BINTI KAMAL JEFRI (A23C0258) | Person B | Inheritance, polymorphism, documentation & testing |
+| Name      | Responsibilities |
+|-----------|------------------|
+| AHMAD ZIYAAD BIN MOHD ABBAS (A23CS0206) | Data structures, relationships, exception handling |
+| NURUL ADRIANA BINTI KAMAL JEFRI (A23C0258) | Inheritance, polymorphism, documentation & testing |
 
 ---
 
