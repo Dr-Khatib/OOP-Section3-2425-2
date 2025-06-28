@@ -1,3 +1,5 @@
+# 📘 OOP Lab Exercise 5 - School Management System (Java)
+
 Here is a **Java Lab Exercise** that demonstrates the key **class relationships**: **Association**, **Aggregation**, **Composition**, **Inheritance**, and **Polymorphism**, all in one coherent example.
 
 ---
