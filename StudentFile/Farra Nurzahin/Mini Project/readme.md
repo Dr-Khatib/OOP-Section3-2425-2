@@ -22,5 +22,5 @@ The system also demonstrates key object-oriented programming concepts, including
 - Exception handling for better program reliability
 
 ## 📄 Report Link:
-[Mini Project Report](https://drive.google.com/drive/folders/1b9H5jPNu145f6ePMk9sh6HLLUQgKe7gC)
+[Mini Project Report](./Report.pdf)
 
