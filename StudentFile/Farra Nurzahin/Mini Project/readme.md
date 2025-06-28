@@ -17,7 +17,7 @@ This project is about developing a **Pharmacy Inventory System** that helps phar
 
 The system also demonstrates key object-oriented programming concepts, including:
 - Inheritance and polymorphism
-- Class relationships (association, aggregation, and composition)
+- Class relationships (association and aggregation)
 - Use of `ArrayList` for data storage
 - Exception handling for better program reliability
 
