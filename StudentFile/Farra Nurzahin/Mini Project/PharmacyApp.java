@@ -43,7 +43,7 @@ class Pharmacist extends User {
     }
 }
 
-// ch6: Class Relationships - Composition
+// ch6: Class Relationships - Aggregation
 // Medicine is a component of the inventory system (InventoryManager "has-a" Medicine)
 
 class Medicine {
@@ -73,7 +73,7 @@ class Medicine {
 }
 
 class InventoryManager {
-    private ArrayList<Medicine> medicines;
+    private ArrayList<Medicine> medicines; //ch5: ArrayList
 
     public InventoryManager(){
         medicines = new ArrayList<>();
@@ -135,6 +135,7 @@ public class PharmacyApp{
         pharmacist.displayInfo();
 
         while (true){
+            //ch9: Exception handling
             try {
                 System.out.println("\n=== Pharmacy Inventory ===");
                 System.out.println("1. Add Medicine");
